@@ -1,0 +1,27 @@
+<html lang="en"></html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="../styles/contactStyle.css">
+    
+</head>
+<body>
+    <div class="contact-container">
+        <form action="/contact" method="GET" class="contact-left">
+            <div class="contact-left-title">
+                <h2>Contact Us</h2>
+                <hr>
+            </div>
+            <input type="text" name="Name" placeholder="Your Full Name" class="contact-inputs" required>
+            <input type="email" name="Email" placeholder="Your Email" class="contact-inputs" required>
+            <textarea name="message" placeholder="Type Your Message" class="contact-inputs" required></textarea>
+            <button type="submit">Submit <img src="../assets/right-arrow.png" alt="" width="15" ></button>
+        </form>
+        <div class="contact-right">
+            <img src="..\contact_assets\assets\background image.png" alt="" width="500px">
+        </div>    
+    </div>
+    
+</body>
+</html>

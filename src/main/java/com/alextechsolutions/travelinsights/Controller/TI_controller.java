@@ -9,11 +9,11 @@ import org.springframework.web.servlet.view.RedirectView;
 public class TI_controller {
     @GetMapping("/contact")
     public RedirectView getContactPage() {
-        return new RedirectView("contact.html");
+        return new RedirectView("/html/adcontact.html");
     }
 
     @GetMapping("/home")
     public RedirectView getHomePage(){
-        return new RedirectView("homePage.html");
+        return new RedirectView("/html/homePage.html");
     }
 }

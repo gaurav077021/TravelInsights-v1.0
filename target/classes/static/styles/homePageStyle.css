@@ -5,6 +5,14 @@
     font-family: 'Poppins', sans-serif;
 }
 
+html {
+    overflow-y: scroll; 
+  }
+  
+  html::-webkit-scrollbar {
+    display: none; 
+  }
+
 
 .header{
     min-height: 100vh;
@@ -61,6 +69,7 @@ nav img{
     transform: translate(-50%,-50%);
     text-align: center;
 }
+
 .text-box h1{
     font-size: 60px;
 }
@@ -76,7 +85,7 @@ nav img{
     border: 1px solid black;
     padding: 12px 34px;
     font-size: 13px;
-    background: transparent;
+    backdrop-filter: blur(30px);
     position: relative;
     cursor: pointer;
 }
@@ -197,18 +206,19 @@ nav .fa{
 .contact-left{
     display: flex;
     flex-direction: column;
-    align-items: start;
+    align-items: center;
     gap: 20px;
 }
 .contact-left-title h2{
     font-weight: 600;
     color: black;
     margin-bottom: 5px;
+    font-size: 50px;
 }
 
 .contact-left-title hr{
     border: none;
-    width: 120px;
+    width: 280px;
     height: 5px;
     background-color: black;
     border-radius: 10px;
@@ -217,7 +227,7 @@ nav .fa{
 .contact-inputs{
     width: 400px;
     height: 50px;
-    border: none;
+    border: 1px solid black;
     outline: none;
     padding-left: 25px;
     font-weight: 500;
@@ -239,7 +249,7 @@ nav .fa{
     display: flex;
     align-items: center;
     padding: 15px 30px;
-    font-size: 16px;
+    font-size: 18px;
     color: #fff;
     gap:10px;
     border: none;
@@ -251,7 +261,60 @@ nav .fa{
     .contact-inputs{
         width: 80vw;
     }
-    .contact-right{
-        display: none;
-    }
+    
 }
+
+/*-------footer--------*/
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: 1px solid #555;
+    margin-top: 5px;
+    padding-top: 5px;
+}
+
+.social-links {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+    display: flex;
+    gap: 15px;
+}
+
+.social-links li a {
+    color: #fff;
+    text-decoration: none;
+}
+.footer-contact p {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.footer-contact hr{
+    border: none;
+    width: 150px;
+    height: 5px;
+    background-color: white;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    margin-left: 45%;
+}
+.footer-bottom {
+    text-align: center;
+    margin-top: 2px;
+    padding-top: 2px;
+}
+.footer-bottom p {
+    font-size: 14px;
+    color: white;
+}
+
+
+

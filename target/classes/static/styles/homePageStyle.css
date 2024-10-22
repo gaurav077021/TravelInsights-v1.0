@@ -264,56 +264,199 @@ nav .fa{
     
 }
 
+/*-------login and register--------*/
+
+/* Profile Icon styles */
+.profile-icon svg {
+    vertical-align: middle;
+    cursor: pointer;
+    color: #000;
+    transition: transform 0.3s;
+}
+
+.profile-icon:hover svg {
+    transform: scale(1.1); /* Slight zoom on hover */
+}
+
+/* General styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: url('https://www.codingnepalweb.com/demos/create-glassmorphism-login-form-html-css/hero-bg.jpg'); /* Add your background image here */
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* Login form styles */
+.login-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.login-card {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 40px;
+    width: 350px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
+    text-align: center;
+    color: white;
+}
+
+.login-card h2 {
+    margin-bottom: 30px;
+    font-size: 24px;
+}
+
+
+.input-field {
+    position: relative;
+    border-bottom: 2px solid #ccc;
+    margin: 15px 0;
+  }
+  
+  .input-field label {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 16px;
+    pointer-events: none;
+    transition: 0.15s ease;
+  }
+  
+  .input-field input {
+    width: 100%;
+    height: 40px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: #fff;
+  }
+  
+  .input-field input:focus~label,
+  .input-field input:valid~label {
+    font-size: 0.8rem;
+    top: 10px;
+    transform: translateY(-120%);
+  }
+
+  button {
+    background: #fff;
+    color: #000;
+    font-weight: 600;
+    margin-top: 5px;
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
+    border-radius: 3px;
+    font-size: 16px;
+    border: 2px solid transparent;
+    transition: 0.3s ease;
+  }
+  
+  button:hover {
+    color: #fff;
+    border-color: #fff;
+    background: rgba(255, 255, 255, 0.15);
+  }
+  
+  .register {
+    text-align: center;
+    margin-top: 20px;
+    color: #fff;
+  }
+
+  .register_name{
+    color: #ff3c1f;
+  }
+
+
+
+
 /*-------footer--------*/
 footer {
     background-color: #333;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
+    color: white;
+    padding: 40px 20px;
 }
 
-.footer-content {
+.footer-container {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-top: 1px solid #555;
-    margin-top: 5px;
-    padding-top: 5px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-.social-links {
+.footer-logo h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.footer-logo p {
+    font-size: 14px;
+    color: #ccc;
+}
+
+.logo-img{
+    width:150px;
+    height: 120px;
+}
+
+.footer-links h3, .footer-contact h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-links ul {
     list-style: none;
-    padding: 0;
-    margin: 10px 0;
-    display: flex;
-    gap: 15px;
 }
 
-.social-links li a {
-    color: #fff;
-    text-decoration: none;
+.footer-links ul li {
+    margin-bottom: 10px;
 }
+
+.footer-links ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.footer-links ul li a:hover {
+    color: #ff4b2b;
+}
+
 .footer-contact p {
     font-size: 14px;
     margin-bottom: 10px;
 }
-.footer-contact hr{
-    border: none;
-    width: 150px;
-    height: 5px;
-    background-color: white;
-    border-radius: 10px;
-    margin-bottom: 20px;
-    margin-left: 45%;
-}
+
 .footer-bottom {
     text-align: center;
-    margin-top: 2px;
-    padding-top: 2px;
+    margin-top: 20px;
+    border-top: 1px solid #555;
+    padding-top: 10px;
 }
+
 .footer-bottom p {
     font-size: 14px;
-    color: white;
+    color: #ccc;
 }
 
 

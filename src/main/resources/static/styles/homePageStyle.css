@@ -14,6 +14,7 @@ html {
   }
 
 
+
 .header{
     min-height: 100vh;
     width: 100%;
@@ -23,6 +24,8 @@ html {
     background-repeat: no-repeat; 
     background-attachment: fixed;
 }
+
+
 nav{
     display: flex;
     padding: 2% 6%;
@@ -319,6 +322,60 @@ body {
 }
 
 
+/* Profile Icon styles */
+.profile-icon svg {
+    vertical-align: middle;
+    cursor: pointer;
+    color: #000;
+    transition: transform 0.3s;
+}
+
+.profile-icon:hover svg {
+    transform: scale(1.1); /* Slight zoom on hover */
+}
+
+/* General styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: url('https://www.codingnepalweb.com/demos/create-glassmorphism-login-form-html-css/hero-bg.jpg'); /* Add your background image here */
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* Login form styles */
+.login-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.login-card {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 40px;
+    width: 350px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
+    text-align: center;
+    color: white;
+}
+
+.login-card h2 {
+    margin-bottom: 30px;
+    font-size: 24px;
+}
+
 .input-field {
     position: relative;
     border-bottom: 2px solid #ccc;
@@ -384,9 +441,8 @@ body {
   }
 
 
+  /* Footer Section */
 
-
-/*-------footer--------*/
 footer {
     background-color: #333;
     color: white;
@@ -456,6 +512,3 @@ footer {
     font-size: 14px;
     color: #ccc;
 }
-
-
-

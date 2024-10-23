@@ -5,6 +5,14 @@
     font-family: 'Poppins', sans-serif;
 }
 
+html {
+    overflow-y: scroll; 
+  }
+  
+  html::-webkit-scrollbar {
+    display: none; 
+  }
+
 
 
 .header{
@@ -64,6 +72,7 @@ nav img{
     transform: translate(-50%,-50%);
     text-align: center;
 }
+
 .text-box h1{
     font-size: 60px;
 }
@@ -79,7 +88,7 @@ nav img{
     border: 1px solid black;
     padding: 12px 34px;
     font-size: 13px;
-    background: transparent;
+    backdrop-filter: blur(30px);
     position: relative;
     cursor: pointer;
 }
@@ -200,18 +209,19 @@ nav .fa{
 .contact-left{
     display: flex;
     flex-direction: column;
-    align-items: start;
+    align-items: center;
     gap: 20px;
 }
 .contact-left-title h2{
     font-weight: 600;
     color: black;
     margin-bottom: 5px;
+    font-size: 50px;
 }
 
 .contact-left-title hr{
     border: none;
-    width: 120px;
+    width: 280px;
     height: 5px;
     background-color: black;
     border-radius: 10px;
@@ -220,7 +230,7 @@ nav .fa{
 .contact-inputs{
     width: 400px;
     height: 50px;
-    border: none;
+    border: 1px solid black;
     outline: none;
     padding-left: 25px;
     font-weight: 500;
@@ -242,7 +252,7 @@ nav .fa{
     display: flex;
     align-items: center;
     padding: 15px 30px;
-    font-size: 16px;
+    font-size: 18px;
     color: #fff;
     gap:10px;
     border: none;
@@ -254,11 +264,62 @@ nav .fa{
     .contact-inputs{
         width: 80vw;
     }
-    .contact-right{
-        display: none;
-    }
+    
+}
+/*-------login and register--------*/
+/* Profile Icon styles */
+.profile-icon svg {
+    vertical-align: middle;
+    cursor: pointer;
+    color: #000;
+    transition: transform 0.3s;
 }
 
+.profile-icon:hover svg {
+    transform: scale(1.1); /* Slight zoom on hover */
+}
+
+/* General styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: url('https://www.codingnepalweb.com/demos/create-glassmorphism-login-form-html-css/hero-bg.jpg'); /* Add your background image here */
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* Login form styles */
+.login-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.login-card {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 40px;
+    width: 350px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
+    text-align: center;
+    color: white;
+}
+
+.login-card h2 {
+    margin-bottom: 30px;
+    font-size: 24px;
+}
 
 
 /* Profile Icon styles */
@@ -314,7 +375,6 @@ body {
     margin-bottom: 30px;
     font-size: 24px;
 }
-
 
 .input-field {
     position: relative;
@@ -380,7 +440,9 @@ body {
     color: #ff3c1f;
   }
 
+
   /* Footer Section */
+
 footer {
     background-color: #333;
     color: white;

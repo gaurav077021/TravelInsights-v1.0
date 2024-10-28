@@ -5,10 +5,10 @@ FROM openjdk:11-jre-slim
 WORKDIR /app
 
 # Copy the JAR file into the container
-COPY target/your-application.jar app.jar
+COPY target/TravelInsights-v1.0.jar app.jar
 
 # Expose the application's port
-EXPOSE 8080
+EXPOSE 80
 
 # Run the application
 ENTRYPOINT ["java", "-jar", "app.jar"]

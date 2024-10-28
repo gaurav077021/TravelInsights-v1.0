@@ -1,9 +1,14 @@
-FROM python:3-alpine
+# Use a base image with Java
+FROM openjdk:17-jre-slim
 
+# Set the working directory
 WORKDIR /app
 
-COPY . .
+# Copy the JAR file into the container
+COPY target/your-application.jar app.jar
 
-EXPOSE 80
+# Expose the application's port
+EXPOSE 8080
 
-CMD ["python3", "-m", "http.server", "80"]
+# Run the application
+ENTRYPOINT ["java", "-jar", "app.jar"]
